@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Referrer-Policy" content="no-referrer" />
+    <title>Pokémon Autocomplete</title>
+    <meta name="description" content="Feito por: srtermax.com \\ Discord: @SrTermax.">
+    <script src="/script.js" defer></script>
+    <script
+      src="https://cdn.tailwindcss.com/"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-100 to-indigo-200 min-h-screen flex items-center justify-center p-4"
+  >
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+        Busca Pokémon
+      </h1>
+
+      <input
+        id="search"
+        type="text"
+        placeholder="Digite o nome de um Pokémon..."
+        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+        autocomplete="off"
+      />
+
+      <ul
+        id="suggestions"
+        class="mt-2 border border-gray-300 rounded bg-white shadow hidden max-h-60 overflow-y-auto"
+      ></ul>
+
+      <div
+        id="details"
+        class="mt-6 p-4 border rounded-lg bg-blue-50 shadow hidden"
+      ></div>
+      <div
+        id="rate-limit-msg"
+        class="mt-4 p-3 bg-red-100 text-red-700 rounded border border-red-300 text-center hidden"
+      >
+        Muitas requisições. Tente novamente mais tarde.
+      </div>
+    </div>
+  </body>
+</html>

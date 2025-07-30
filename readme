@@ -1,0 +1,76 @@
+# Pokémon Autocomplete
+
+Buscar Pokémon usando a [PokéAPI](https://pokeapi.co/), com autocomplete e detalhes do Pokémon selecionado.
+
+Desafio Intermediário – Autocomplete com PokéAPI // Por: Khan
+
+---
+
+## Funcionalidades
+
+* Busca instantânea com autocomplete para nomes de Pokémon.
+* Exibe detalhes como número, tipos e imagem do Pokémon.
+* Proteção contra muitas requisições com limite de 5 requisições por 10 minutos por IP.
+* Mensagem amigável exibida no frontend quando o limite de requisições é atingido.
+* Segurança reforçada com Helmet e política de conteúdo segura (CSP).
+* Frontend responsivo e estilizado com Tailwind CSS.
+
+---
+
+## Tecnologias
+
+* Node.js + Express
+* Axios para requisições HTTP
+* express-rate-limit para limitar requisições
+* Helmet para segurança HTTP
+* Tailwind CSS no frontend
+
+---
+
+## Como usar
+
+1. Clone o repositório
+2. Instale dependências
+
+```bash
+npm install
+```
+
+3. Rode a aplicação
+
+```bash
+npm start
+```
+
+4. Acesse no navegador em [http://localhost:3000](http://localhost:3000)
+
+---
+
+## Estrutura de arquivos
+
+* `/views/index.html` - página principal com a busca.
+* `/public/script.js` - JavaScript frontend para autocomplete e exibição de detalhes.
+* `server.js` (ou `app.js`) - backend Express, com rotas `/search` e `/pokemon/:name`.
+
+---
+
+## Limite de requisições
+
+Para evitar abusos, o servidor limita a 50 requisições. Se ultrapassar, o frontend exibe uma mensagem:
+
+> Muitas requisições. Tente novamente mais tarde.
+
+---
+
+## Segurança
+
+* Helmet com CSP configurado para permitir apenas fontes e conexões necessárias.
+* Referrer Policy configurada para `no-referrer`.
+* Limite de tamanho das requisições JSON e URL.
+
+---
+
+## Personalização
+
+* Pode ajustar o limite de requisições no backend no middleware `express-rate-limit`.
+* Pode alterar o estilo no arquivo HTML usando Tailwind CSS.
