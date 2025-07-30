@@ -31,7 +31,7 @@ Frontend:** Tailwind CSS
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/Trmxv9/PokeAPID.git
     ```
 
 2.  **Instale as dependências:**
