@@ -41,7 +41,7 @@ Desafio Intermediário – Autocomplete com PokéAPI // Por: Khan
 
 3.  **Inicie a aplicação:**
     ```bash
-    npm start
+    nodemon
     ```
 
 4.  **Acesse no seu navegador:**
