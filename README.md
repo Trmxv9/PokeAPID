@@ -8,12 +8,12 @@ Desafio Intermediário – Autocomplete com PokéAPI // Por: Khan
 
 ## 🚀 Funcionalidades
 
-Busca Instantânea:** Autocomplete para nomes de Pokémon à medida que o usuário digita.
-Detalhes do Pokémon:** Exibe o número, tipos e a imagem do Pokémon selecionado.
-Proteção de Requisições:** Limite de 5 requisições a cada 10 minutos por IP para evitar sobrecarga.
-Feedback ao Usuário:** Mensagem amigável é exibida no frontend quando o limite de requisições é atingido.
-Segurança:** Implementação de `Helmet` e uma Política de Conteúdo Segura (CSP) para maior proteção.
-Design Responsivo:** Frontend estilizado com Tailwind CSS, adaptável a diferentes tamanhos de tela.
+* **Busca Instantânea:** Autocomplete para nomes de Pokémon à medida que o usuário digita.
+* **Detalhes do Pokémon:** Exibe o número, tipos e a imagem do Pokémon selecionado.
+* **Proteção de Requisições:** Limite de 5 requisições a cada 10 minutos por IP para evitar sobrecarga.
+* **Feedback ao Usuário:** Mensagem amigável é exibida no frontend quando o limite de requisições é atingido.
+* **Segurança:** Implementação de `Helmet` e uma Política de Conteúdo Segura (CSP) para maior proteção.
+* **Design Responsivo:** Frontend estilizado com Tailwind CSS, adaptável a diferentes tamanhos de tela.
 
 ---
 
@@ -59,7 +59,7 @@ Frontend:** Tailwind CSS
 
 ## ⚠️ Limite de Requisições
 
-Para prevenir abusos e sobrecarga da API, o servidor implementa um limite de **50 requisições**. Se este limite for ultrapassado, o frontend exibirá a seguinte mensagem ao usuário:
+* **Para prevenir abusos e sobrecarga da API, o servidor implementa um limite de **50 requisições**. Se este limite for ultrapassado, o frontend exibirá a seguinte mensagem ao usuário:
 
 > Muitas requisições. Tente novamente mais tarde.
 
@@ -67,9 +67,9 @@ Para prevenir abusos e sobrecarga da API, o servidor implementa um limite de **5
 
 ## 🔒 Segurança
 
-Helmet com CSP:** Configurado para permitir apenas as fontes e conexões estritamente necessárias para o funcionamento da aplicação.
-Referrer Policy:** Definida como `no-referrer` para não enviar informações de referência.
-Limite de Dados:** Limitação no tamanho das requisições JSON e do corpo da URL.
+* **Helmet com CSP:** Configurado para permitir apenas as fontes e conexões estritamente necessárias para o funcionamento da aplicação.
+* **Referrer Policy:** Definida como `no-referrer` para não enviar informações de referência.
+* **Limite de Dados:** Limitação no tamanho das requisições JSON e do corpo da URL.
 
 ---
 
