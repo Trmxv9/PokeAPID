@@ -59,7 +59,7 @@ Desafio Intermediário – Autocomplete com PokéAPI // Por: Khan
 
 ## ⚠️ Limite de Requisições
 
-* **Para prevenir abusos e sobrecarga da API, o servidor implementa um limite de **50 requisições**. Se este limite for ultrapassado, o frontend exibirá a seguinte mensagem ao usuário:
+* Para prevenir abusos e sobrecarga da API, o servidor implementa um limite de **50 requisições**. Se este limite for ultrapassado, o frontend exibirá a seguinte mensagem ao usuário:
 
 > Muitas requisições. Tente novamente mais tarde.
 
