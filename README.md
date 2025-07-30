@@ -19,11 +19,11 @@ Desafio Intermediário – Autocomplete com PokéAPI // Por: Khan
 
 ## 🛠️ Tecnologias Utilizadas
 
-Backend:** Node.js + Express
-Requisições HTTP:** Axios
-Limite de Requisições:** `express-rate-limit`
-Segurança HTTP:** `Helmet`
-Frontend:** Tailwind CSS
+* **Backend:** Node.js + Express
+* **Requisições HTTP:** Axios
+* **Limite de Requisições:** `express-rate-limit`
+* **Segurança HTTP:** `Helmet`
+* **Frontend:** Tailwind CSS
 
 ---
 
