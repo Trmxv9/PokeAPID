@@ -1,76 +1,79 @@
 # Pokémon Autocomplete
 
-Buscar Pokémon usando a [PokéAPI](https://pokeapi.co/), com autocomplete e detalhes do Pokémon selecionado.
+Busca de Pokémon usando a [PokéAPI](https://pokeapi.co/), com funcionalidade de autocomplete e exibição de detalhes do Pokémon selecionado.
 
-Desafio Intermediário – Autocomplete com PokéAPI // Por: Khan
-
----
-
-## Funcionalidades
-
-* Busca instantânea com autocomplete para nomes de Pokémon.
-* Exibe detalhes como número, tipos e imagem do Pokémon.
-* Proteção contra muitas requisições com limite de 5 requisições por 10 minutos por IP.
-* Mensagem amigável exibida no frontend quando o limite de requisições é atingido.
-* Segurança reforçada com Helmet e política de conteúdo segura (CSP).
-* Frontend responsivo e estilizado com Tailwind CSS.
+*Desafio Intermediário – Autocomplete com PokéAPI // Por: Khan*
 
 ---
 
-## Tecnologias
+## 🚀 Funcionalidades
 
-* Node.js + Express
-* Axios para requisições HTTP
-* express-rate-limit para limitar requisições
-* Helmet para segurança HTTP
-* Tailwind CSS no frontend
-
----
-
-## Como usar
-
-1. Clone o repositório
-2. Instale dependências
-
-```bash
-npm install
-```
-
-3. Rode a aplicação
-
-```bash
-npm start
-```
-
-4. Acesse no navegador em [http://localhost:3000](http://localhost:3000)
+* **Busca Instantânea:** Autocomplete para nomes de Pokémon à medida que o usuário digita.
+* **Detalhes do Pokémon:** Exibe o número, tipos e a imagem do Pokémon selecionado.
+* **Proteção de Requisições:** Limite de 5 requisições a cada 10 minutos por IP para evitar sobrecarga.
+* **Feedback ao Usuário:** Mensagem amigável é exibida no frontend quando o limite de requisições é atingido.
+* **Segurança:** Implementação de `Helmet` e uma Política de Conteúdo Segura (CSP) para maior proteção.
+* **Design Responsivo:** Frontend estilizado com Tailwind CSS, adaptável a diferentes tamanhos de tela.
 
 ---
 
-## Estrutura de arquivos
+## 🛠️ Tecnologias Utilizadas
 
-* `/views/index.html` - página principal com a busca.
-* `/public/script.js` - JavaScript frontend para autocomplete e exibição de detalhes.
-* `server.js` (ou `app.js`) - backend Express, com rotas `/search` e `/pokemon/:name`.
+* **Backend:** Node.js + Express
+* **Requisições HTTP:** Axios
+* **Limite de Requisições:** `express-rate-limit`
+* **Segurança HTTP:** `Helmet`
+* **Frontend:** Tailwind CSS
 
 ---
 
-## Limite de requisições
+## ⚙️ Como Usar
 
-Para evitar abusos, o servidor limita a 50 requisições. Se ultrapassar, o frontend exibe uma mensagem:
+1.  **Clone o repositório:**
+    ```bash
+    git clone <URL_DO_REPOSITORIO>
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+3.  **Inicie a aplicação:**
+    ```bash
+    npm start
+    ```
+
+4.  **Acesse no seu navegador:**
+    [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📁 Estrutura de Arquivos
+
+* `./views/index.html`: Página principal que contém a interface de busca.
+* `./public/script.js`: Código JavaScript do frontend para a lógica de autocomplete e exibição dos detalhes.
+* `server.js` (ou `app.js`): Servidor backend Express que gerencia as rotas `/search` e `/pokemon/:name`.
+
+---
+
+## ⚠️ Limite de Requisições
+
+Para prevenir abusos e sobrecarga da API, o servidor implementa um limite de **50 requisições**. Se este limite for ultrapassado, o frontend exibirá a seguinte mensagem ao usuário:
 
 > Muitas requisições. Tente novamente mais tarde.
 
 ---
 
-## Segurança
+## 🔒 Segurança
 
-* Helmet com CSP configurado para permitir apenas fontes e conexões necessárias.
-* Referrer Policy configurada para `no-referrer`.
-* Limite de tamanho das requisições JSON e URL.
+* **Helmet com CSP:** Configurado para permitir apenas as fontes e conexões estritamente necessárias para o funcionamento da aplicação.
+* **Referrer Policy:** Definida como `no-referrer` para não enviar informações de referência.
+* **Limite de Dados:** Limitação no tamanho das requisições JSON e do corpo da URL.
 
 ---
 
-## Personalização
+## 🎨 Personalização
 
-* Pode ajustar o limite de requisições no backend no middleware `express-rate-limit`.
-* Pode alterar o estilo no arquivo HTML usando Tailwind CSS.
+* **Ajustar Limite de Requisições:** Você pode modificar o limite no backend, alterando as configurações do middleware `express-rate-limit`.
+* **Alterar Estilos:** A aparência pode ser customizada diretamente no arquivo HTML, utilizando as classes do Tailwind CSS.
